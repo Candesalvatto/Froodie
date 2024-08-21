@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NavBar{width: 100%;
+background-color: #D43F64;}
+
+.logo-nav{width: 90px;}
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+.banner-primary{
+  width: 100%;
+  background-color: #D43F64;
+height: 800px;
+border:1px solid blue}
+
+.banner-secundary{width: 90%;
+margin: auto;
+border:2px solid aqua;
+position: relative;
+}
+
+
+.banner-img img{width: 100%;
+object-fit: cover;
+overflow: hidden;
+z-index: 1;
+border-radius: 20px;}
+
+.banner-slinte img{
+  position: absolute; 
+  left: 20px; 
+  bottom: 20px; 
+  width: 700px; 
+  height: auto;
+  z-index: 2; 
+
+}
+
+.banner-text {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.banner-text h1, .banner-text h2, .banner-text h3 {
+  margin: 10px 0;
+  font-size: 1em;
+}
