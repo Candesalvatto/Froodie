@@ -1,8 +1,35 @@
+@font-face {
+	font-family: Burgers Perfect Regular;
+	src: url('../public/src/assets/font/FontsFree-Net-Burgers-Perfect.ttf');
+}
+
+@font-face {
+	font-family:  Bahnschrift Regular;
+	src: url('../public/src/assets/font/Bahnschrift\ Regular.ttf');
+}
+
+@font-face {
+	font-family:  Campuni Bol;
+	src: url('../public/src/assets/font/CampuniDemo-Bold.otf');
+}
+
+@font-face {
+	font-family:  Campuni Bl ;
+	src: url('../public/src/assets/font/CampuniDemo-Black.otf');
+}
+
+@font-face {
+	font-family:  Tusker Grotesk ;
+	src: url('../public/src/assets/font/TuskerGrotesk-5600Semibold.ttf');
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 .NavBar{width: 100%;
 background-color: #D43F64;}
@@ -15,30 +42,36 @@ background-color: #D43F64;}
 .banner-primary{
   width: 100%;
   background-color: #D43F64;
-height: 800px;
-border:1px solid blue}
+height: 1000px;
+padding-top: 20px;}
 
 .banner-secundary{width: 90%;
+  height: 800px;
+  overflow: hidden;
 margin: auto;
-border:2px solid aqua;
 position: relative;
 }
 
-
+.banner-img{
+  z-index: 1;
+}
 .banner-img img{width: 100%;
 object-fit: cover;
 overflow: hidden;
-z-index: 1;
 border-radius: 20px;}
 
-.banner-slinte img{
-  position: absolute; 
-  left: 20px; 
-  bottom: 20px; 
-  width: 700px; 
+.banner-slinte img{ 
+  width: 650px; 
   height: auto;
   z-index: 2; 
+}
 
+.banner-slinte{
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .banner-text {
@@ -50,10 +83,539 @@ border-radius: 20px;}
   color: white;
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 400px;
+  margin-left: 60px;
+  margin-top: 40px;
+
 }
 
-.banner-text h1, .banner-text h2, .banner-text h3 {
-  margin: 10px 0;
+.banner-text h1 {
+  color: #D43F64;
+  font-size: 2.8em;
+  font-family:  Tusker Grotesk ;
+  text-align: left;
+
+}
+.banner-text h2 {
+  color: #D43F64;
+  font-size: 3em;
+  font-family:  Tusker Grotesk ;
+
+}
+.banner-text h3 {
+  color: black;
+  font-size: 1.5em;
+	font-family:  Bahnschrift Regular;
+  margin-top: 60px;
+  width: 80%;
+  text-align: left;
+
+}
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+.products-cont-gral{
+  width: 100%;
+  background-color: #edece2;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-product-h{
+  width: 85%;
+  margin:auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-product-h h1{
+	font-family: Burgers Perfect Regular;
+  font-size: 1.8em;
+  color: black;
+  letter-spacing: 3px;
+}
+.text-product-h h2{
+	font-family:  Tusker Grotesk ;
+  font-size: 4.3em;
+  color: #D43F64;
+  width: 60%;
+}
+
+.container__prod{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_prod_cat{
+  height: 320px;
+  width: 320px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: filter 0.3s ease,transform 0.3s ease;
+  
+}
+
+.cont_prod_cat:hover{
+
+  transform: scale(1.1) rotate(3deg);
+}
+
+
+.h3__cat{
+  height: 100px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+.cont__h3__cat{
+  width: 85%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+
+}
+.h3__cat h3{
+  color: black;
+  font-family:  Tusker Grotesk ;
+  font-size: 2.5em;
+  left: 0;
+  top: 0;
+
+}
+
+.prod_slinte_nude{
+  width: 100%;
+  position: absolute;
+  /* transition: filter 0.3s ease,transform 0.3s ease; */
+  z-index: 1;
+}
+
+/* .prod_slinte_nude:hover{
+  filter:hue-rotate(180deg);
+
+} */
+
+.prod_img_catg{
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+}
+
+
+.prod_flecha{
+  width: 15%;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+
+}
+
+
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+.footer-cont-gral{
+  width: 100%;
+  height: 600px;
+  background-color: #D43F64;
+  display: flex;
+}
+
+.footer-cont-gral span{
+font-size: 0.8em;
+color: #edece2;
+}
+
+
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+
+.cont-form-gral{
+  width: 100%;
+  background-color: #edece2;
+  border: 1px solid #edece2;
+}
+
+
+.letter{
+margin: 100px;
+}
+
+.letter-1 h1{
+  font-size: 5em;
+  color:#D43F64;
+  font-family:  Tusker Grotesk ;
+}
+
+.letter-1 h2{
+  width: 50%;
+  font-size: 1.6em;
+  color: black;
+  font-family:  Tusker Grotesk ;
+}
+
+.letter-1 p{
+  font-size: 1.6em;
+  color: #D43F64;
+  font-family:  Tusker Grotesk ;
+}
+
+.letter form{
+  width: 60%;
+}
+
+.letter form input{
+border-bottom: 2px solid black;
+width: 100%;
+font-family: Burgers Perfect Regular;
+font-size: 1.7em;
+padding: 10px;
+margin-top: 15px;
+border-top: none;
+border-left: none;
+border-right: none;
+background-color: transparent;
+outline: none;
+}
+
+.letter form textarea{
+  border-bottom: 2px solid black;
+width: 100%;
+font-family: Burgers Perfect Regular;
+font-size: 1.7em;
+padding: 10px;
+margin-top: 15px;
+border-top: none;
+border-left: none;
+border-right: none;
+background-color: transparent;
+outline: none;
+}
+
+.letter form button{
+  width: 50%;
+  color: #edece2;
+  background-color: #D43F64;
+  font-family: Burgers Perfect Regular;
+font-size: 1.5em;
+border: 1px solid #D43F64;
+border-radius: 20px;
+margin-top: 30px;
+letter-spacing: 3px;
+padding: 3px;
+}
+
+.letter form button:hover{
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.5s ease;
+
+}
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+
+
+.cont-cool-gral{
+  width: 100%;
+  height: 800px;
+  background-color: #edece2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fab-col{
+  width: 85%;
+  margin: auto;
+  background-color: #F0D7B0;
+  border-radius: 20px;
+  display: flex;
+}
+
+.text-fab{
+
+  width: 40%;
+  margin: 40px;
+}
+
+.text-fab h1{
+  color: #D43F64;
+  font-family:  Tusker Grotesk ;
+font-size: 5em;
+margin-top: 30px;
+}
+
+.text-fab h2{
+  color: black;
+  font-family:  Tusker Grotesk ;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.text-fab button{
+  width: 50%;
+  color: #edece2;
+  background-color: #D43F64;
+  font-family: Burgers Perfect Regular;
+font-size: 1.5em;
+border: 1px solid #D43F64;
+border-radius: 20px;
+margin-top: 30px;
+letter-spacing: 3px;
+padding: 3px;
+}
+
+.text-fab button:hover{
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.5s ease;
+}
+
+
+.img-fab{
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.slinte{width: 670px;
+  position: absolute;
+z-index: 1;
+}
+.fabric{width: 700px;
+  position: absolute;
+z-index: 2;
+border-radius: 20px;
+}
+
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+
+.cont-exp-gral{
+  width: 100%;
+  height: 800px;
+  background-color: #edece2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.exp-col{
+  width: 85%;
+  height: 700px;
+  margin: auto;
+  background-color: #F0D7B0;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.img-exp{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+
+}
+
+.slinte-cont-exp{
+  z-index: 2;
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 40px;
+
+}
+
+.slinte-exp{
+  width: 100%;
+}
+
+.slinte-cont-exp h1{
+  z-index: 3;
+  color: #edece2;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5em;
+  position: absolute;
+  padding-bottom: 150px;
+ padding-left: 50px;
+ font-family:  Tusker Grotesk ;
+ 
+
+}
+.slinte-cont-exp h2{
+  z-index: 3;
+  color: #edece2;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  position: absolute;
+padding-top: 150px;
+padding-left: 50px;
+padding-right: 40px;
+font-family:  Tusker Grotesk ;
+}
+
+.slinte-cont-exp button{
+  position: absolute;
+  width: 50%;
+  margin-top: 350px;
+  left: 0;
+  margin-left: 50px;
+  background-color: #00a950;
+  color: #edece2;
+  border: 1px solid #00a950;
+  border-radius: 20px;
+  padding: 3px;
+  letter-spacing: 3px;
+  font-family: Burgers Perfect Regular;
+  font-size: 1.5em;
+}
+
+.slinte-cont-exp button:hover{
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.5s ease;}
+
+  
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+
+.bests-sellers-cont-gral{
+  width: 100%;
+  height: 800px;
+  background-color: #edece2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.best__h{
+  width: 85%;
+
+}
+
+.best__h h1{
+  font-family: Burgers Perfect Regular;
+  color: black;
+  font-size: 1.8em;
+}
+.best__h h2{
+  font-family:  Tusker Grotesk ;
+  color: #D43F64;
+  font-size: 4em;
+}
+
+.cards_best_cont{
+  width: 85%;
+  display: flex;
+justify-content: center;
+margin: auto;
+
+}
+
+.img_best{
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.title_b_s{
+  font-family:  Tusker Grotesk ;
+  color: black;
+font-size: 1.8em;}
+
+.cook_cont_{
+
+display: flex;
+flex-direction: row;
+bottom: 0;
+position: absolute;
+width: 100%;
+margin-bottom: 15px;
+}
+
+
+
+.clock-icon{
+  color: black;
+width: 30px;
+
+}
+
+
+.card_best_seller{
+  background-color: #dedcc7;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid #dedcc7;
+  height: 600px;
+  margin: auto;
+}
+
+.cook_cont_ Button{
+  background-color: #edece2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+border: 1px solid #edece2;}
+
+.cook_cont_ Button p{
+  color: black;
   font-size: 1em;
+  font-family: Burgers Perfect Regular;
+  margin: auto;
+
+}
+
+.button_b2{
+  margin-left: 20px;
+}
+
+.cook_cont_ Button:hover{
+  background-color: #edece2;
+  border: 1px solid #edece2;
+  cursor:default;
 }

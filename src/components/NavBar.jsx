@@ -9,7 +9,7 @@ export const NavBar = () => {
     const handleShow = () => setShow(true);
   return (
     <>
-    <Navbar  variant="dark" expand="lg" sticky="top" className='NavBar'>
+    <Navbar expand="lg" sticky="top" className='NavBar'>
       <Container fluid>
         <Navbar.Brand href="#home">
           <Image
