@@ -230,17 +230,86 @@ border-radius: 20px;}
 
 .footer-cont-gral{
   width: 100%;
-  height: 600px;
+  /* height: 800px; */
   background-color: #D43F64;
   display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+
+
 }
+
+.copyrigth{
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items:center;
+
+}
+
+
+.pol_con a{
+color: white;
+padding: 20px;
+text-decoration: none;}
 
 .footer-cont-gral span{
 font-size: 0.8em;
 color: #edece2;
+margin-top: 40px;
+
 }
 
+.cont_footer{
 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+}
+
+.cont_footer img{
+  width: 250px;
+  padding-bottom: 40px;
+}
+.cont_footer a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family:  Tusker Grotesk ;
+  font-size: 1.7em;
+  padding-top: 20px;
+}
+
+.social_co{
+
+  width: 30%;
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+.social_co img{
+width: 100%;
+}
+.social_co h1{
+  color: white;
+  font-size: 1.8em;
+}
+.social_co_i{
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 30px;
+}
+.social_co_i img{
+  width: 40px;
+  height: 40px;
+}
+.social_co_i p{
+  color: white;
+  font-family:  Tusker Grotesk ;
+  font-size: 2em;
+  padding-left: 20px;
+}
 
 @media (min-width: 481px) and ( max-width: 850px) {}
 @media (max-width: 480px) {}
@@ -619,3 +688,205 @@ border: 1px solid #edece2;}
   border: 1px solid #edece2;
   cursor:default;
 }
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+.meet-cont-gral{
+  width: 100%;
+  background-color: #edece2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.meet_container{
+  border: 1px solid #000;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.carousel_img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+display: flex;
+
+}
+
+.carousel_item h3{
+  color: white;
+  font-size: 3em;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.carousel_item p{
+  color: white;
+  font-size: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+
+.cont_car{
+  border: 2px solid green;
+  width: 40%;
+  margin: auto;
+
+}
+
+.text_car{
+  border: 2px solid orange;
+  background-image: url(../public/src/assets/img/yellow.png);
+  object-fit: contain;
+  overflow: hidden;
+  background-size: 100% 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+.carou_h{
+  border: 1px solid blue;
+  width: 50%;
+}
+
+.carou_h h1{
+  color: #D43F64;
+  font-family:  Tusker Grotesk ;
+  font-size: 4em;
+  margin-top: 150px;
+}
+.carou_h h2{
+  color: black;
+  margin-top: 50px;
+  font-family:  Tusker Grotesk ;
+
+
+}
+
+
+.flecha_green{
+  height: 150px;
+transform: scaleX(-1);
+margin-top: 300px;}
+
+.cont_cook{
+  width: 100%;
+  background-color: #edece2;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cook_inst{
+  width: 85%;
+  height: 700px;
+  margin: 40px auto;
+  background-image: url(../public/src/assets/img/banner-cook.png);
+  object-fit: contain;
+  background-size: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.h_co{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h_co h1{
+  color: white;
+  font-family:  Tusker Grotesk ;
+  font-size: 4.5em;
+  margin-top: 70px;
+}
+
+.h_co h2{
+  color: white;
+  font-family:  Tusker Grotesk ;
+  font-size: 1.5em;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px
+
+}
+
+.dv_co{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.dv_3{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 30%;
+margin: auto;
+}
+
+.dv_3 h3{
+  color: white;
+  font-family:  Tusker Grotesk ;
+  font-size: 2.7em;
+  margin-top: 20px;
+}
+.dv_3 h4{
+  color: white;
+}
+
+.dv_3 img{
+  width: 120px;
+}
+
+@media (min-width: 481px) and ( max-width: 850px) {}
+@media (max-width: 480px) {}
+
+.cont_gral_loc_points{
+  width: 100%;
+  height: 800px;
+  background-color: #edece2;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cont_gral_loc_points h1{
+  color: black;
+  font-family:  Tusker Grotesk ;
+  font-size: 3em;
+text-align: center;
+  
+
+}
+
+
+
+ .buttons_points{
+
+  width: 70%;
+  margin: 70px auto;
+
+text-align: center;
+}
+
+.buttons_points a img{
+  width: 200px;
+  margin: 20px;
+  
+}
+

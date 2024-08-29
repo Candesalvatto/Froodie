@@ -1,4 +1,4 @@
-import Baner from '../../public/src/assets/img/top-view-weekle-food-planner-concept_23-2148478196 (1).jpg'
+import Baner from '../../public/src/assets/img/meal-plan-with-copy-space-lots-vegetables-pasta.jpg'
  import Slinte from '../../public/src/assets/img/slinte-yellow.png'
 
 export const Banner = () => {
