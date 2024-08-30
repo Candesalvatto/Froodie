@@ -14,15 +14,15 @@ export const FormContact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(formRef.current);
-    const fromName = formData.get('from_name');
-    const fromLastName = formData.get('from_lastname');
+     const formData = new FormData(formRef.current);
+    // const fromName = formData.get('from_name');
+    // const fromLastName = formData.get('from_lastname');
     const emailId = formData.get('email_id');
-    const phoneId = formData.get('phone_id');
-    const companyId = formData.get('company_id');
-    const message = formData.get('message');
+    // const phoneId = formData.get('phone_id');
+    // const companyId = formData.get('company_id');
+    // const message = formData.get('message');
 
-    if (!fromName || !fromLastName || !emailId || !phoneId || !companyId || !message) {
+    if ( !emailId ) {
       setShowError(true);
       setTimeout(() => {
         setShowError(false);
@@ -39,6 +39,7 @@ export const FormContact = () => {
     const userID = 'y7pgvYD58gGTFMvzM';
 
     emailjs.sendForm(serviceID, templateID, formRef.current, userID)
+
       .then(() => {
         setIsSending(false);
         formRef.current.reset();
@@ -47,6 +48,8 @@ export const FormContact = () => {
           setShowSuccess(false);
         }, 4000);
       })
+
+    
       .catch((err) => {
         setIsSending(false);
         alert(JSON.stringify(err));
@@ -56,8 +59,8 @@ export const FormContact = () => {
   return (
     <div className='cont-form-gral'>
 
-      <Container className='letter'>
-        <Col className="align-items-center">
+      {/* <Container className='letter'> */}
+        {/* <Col className="align-items-center">
           <Col className='letter-1'>
             <h1>Contacto</h1>
             <h2>¿Interesado en nuestra marca? ¿Tiene preguntas sobre cocina, ingredientes o abastecimiento? ¿Consultas de precios? Háganoslo saber completando el formulario a continuación o contáctenos en</h2>
@@ -102,12 +105,41 @@ export const FormContact = () => {
                     </Row>
                   </form>
                 </div>
-              
-
           </Col>
         </Col>
-      </Container>
+      </Container> */}
 
+
+      <Container className='letter'>
+        <Col className="align-items-center">
+          <Col className='letter-1'>
+            <h1>Suscribite a nuestro newletter</h1>
+            <h2>Recibe información de Froodie cada semana para estar al día con las novedades</h2>
+          </Col>
+          <form ref={formRef} onSubmit={sendEmail} id="form">
+                    <Row className="row_form">
+                      <Col  className="px-2">
+                      {showSuccess && (
+                <Alert variant="success">
+                  ¡Gracias por suscribirte!
+                </Alert>
+              )}
+                {showError && (
+                <Alert variant="danger">
+                  Por favor, completa con tu mail para poder suscribirte
+                </Alert>
+              )}
+                      <input type="email" name="email_id" id="email_id" placeholder="Correo electrónico" />
+                      </Col>
+                      <Col size={12} className="px-2">
+                        <button type="submit" disabled={isSending}>
+                          {isSending ? 'Enviando...' : 'Enviar'} 
+                        </button>
+                      </Col>
+                      </Row>
+                      </form>
+          </Col>
+          </Container>
 
     </div>
   )

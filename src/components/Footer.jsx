@@ -10,7 +10,6 @@ export const Footer = () => {
         <a href=""></a>
         <a href="">Sobre Nosotros</a>
         <a href="">Best Sellers</a>
-        <a href="">Envios y devoluciones</a>
         <a href="">Preguntas frecuentes</a>
         <a href="">Contáctenos</a>
         <a href="">Encuéntrenos</a>
@@ -24,12 +23,18 @@ export const Footer = () => {
         </div>
       <div className='social_co'>
         <h1>¡Síguenos en nuestras redes sociales!</h1>
-        <img src={linea} alt=''/>
+
         <div className='social_co_i'>
           <img src={ico_insta} alt='instagram'/>
-          <p>@froodie.ar</p>
+          <a href='https://www.instagram.com/froodie.ar/'>@froodie.ar</a>
+        </div>
+        <img src={linea} alt=''/>
+        <div className='distr_inf'>
+        <h2>Si estás interesado en ser distribuidor escríbenos a</h2>
+        <p>ventas@coolmeals.com.ar</p>
         </div>
       </div>
+      
 
     </div>
   )

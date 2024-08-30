@@ -20,10 +20,10 @@ export const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
         <Navbar.Collapse className="justify-content-end d-none d-lg-flex">
-          <Nav>
-            <Nav.Link href="#productos">Productos</Nav.Link>
-            <Nav.Link href="#sobre-nosotros">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
+          <Nav className='link_c'>
+            <Nav.Link className='nav_link' href="#productos">Productos</Nav.Link>
+            <Nav.Link className='nav_link' href="#sobre-nosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link  className='nav_link' href="#contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

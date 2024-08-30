@@ -11,7 +11,7 @@ import ico_horno from '../../public/src/assets/img/horno.png'
 export const Meet = () => {
   return (
     <div className="meet-cont-gral">
-        <div className="meet_container">
+     
           {/* <div className='carou_h'>
             <h1>Cómo calentar tu Froodie</h1>
             <h2>Quitar del freezer, puedes desjarlo descongelar o usar elementos de tu cocina. El envase es apto para microondas, no te preocupes!</h2>
@@ -44,12 +44,12 @@ export const Meet = () => {
 
 
     </Carousel> */}
-        </div>
+        
         <div className='cont_cook'>
           <div className='cook_inst'>
             <div className='h_co'>
               <h1>Cómo calentar tu Froodie</h1>
-              <h2>Quitar del freezer, puedes desjarlo descongelar o usar elementos de tu cocina. El envase es apto para microondas, no te preocupes!</h2>
+              <h2>Quitar del freezer, puedes dejarlo descongelar o usar elementos de tu cocina. El envase es apto para microondas, no te preocupes!</h2>
             </div>
 
             <div className='dv_co'>
