@@ -1072,3 +1072,78 @@ text-align: center;
   
 }
 
+.pruebaProductos{
+  border: 2px solid #00a950;
+  margin: auto;
+  width: 95%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  position: relative;
+}
+
+.pruebaProductos h1{
+  font-size: 4.5em;
+  color: #D43F64;
+  align-self: flex-start;
+  font-family:  Tusker Grotesk ;
+}
+.pruebaProductosDiv{
+  border:2px solid #D43F64;
+  width: 100%;
+  height: 700px;
+  position: relative;
+
+}
+.img_pack{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+
+}
+
+.pruebaProductosContImg{
+  border: 2px solid black;
+  width: 85%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: -40px;
+  right: 0;
+
+}
+
+.pruebaProductosContImg img{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+
+}
+
+.card_pastel{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card_body{
+  width: 160px;
+text-align:center;
+}
+
+.card_title_prueba{
+font-size: 0.8em;
+height: 20px;
+
+
+}
+
+.card_prueba{
+  border-radius: 0;
+  margin: auto;
+}

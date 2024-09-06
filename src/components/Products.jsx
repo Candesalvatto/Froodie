@@ -4,6 +4,27 @@ import Wrap from '../../public/src/assets/img/testwrap.png'
 import Tarta from '../../public/src/assets/img/testtarta.png'
 // import Slinte from '../../public/src/assets/img/Slinte-nude.png'
 import Flecha from '../../public/src/assets/img/flecha.png'
+import pack from '../../public/src/assets/img/packpastel.png'
+import pastel from '../../public/src/assets/img/Packaging Pastel de papas.jpg'
+import carne from '../../public/src/assets/img/Packaging Carne braseada con arroz.jpg'
+import carre from '../../public/src/assets/img/Packaging Carre de cerdo con pure de batatas.jpg'
+import risoto from '../../public/src/assets/img/risoto.jpg'
+import carne2 from '../../public/src/assets/img/carneconpure.jpg'
+import canelones from '../../public/src/assets/img/canelones.jpg'
+import albondigas from '../../public/src/assets/img/Packaging Albondigas a la portugesa con arroz.jpg'
+import lasagna from '../../public/src/assets/img/lasagna.jpg'
+import pack2 from '../../public/src/assets/img/w-pollo.png'
+import wrap1 from '../../public/src/assets/img/Packaging Wrap de carne con cheddar.jpg'
+import wrap2 from '../../public/src/assets/img/Packaging Wrap de jamon y queso.jpg'
+import wrap3 from '../../public/src/assets/img/Packaging Wrap de pollo.jpg'
+import wrap4 from '../../public/src/assets/img/Packaging Wrap de vegetales grillados.jpg'
+import wrap5 from '../../public/src/assets/img/Packaging Wrap de vegetales.jpg'
+import pack3 from '../../public/src/assets/img/packtarta.png'
+import tarta1 from '../../public/src/assets/img/bicolor.png'
+import tarta2 from '../../public/src/assets/img/jyqtarta.png'
+import tarta3 from '../../public/src/assets/img//vegtartar.png'
+import tarta4 from '../../public/src/assets/img/pollotarta.png'
+import Card from 'react-bootstrap/Card';
 
 export const Products = () => {
   return (
@@ -55,14 +76,6 @@ export const Products = () => {
             <div className="text-product-h">
           <h1>Explora nuestros productos</h1>
           <h2>Disfruta de la magia de comer rico y sano sin cocinar en tu casa</h2>
-          {/* <div className='hh'>
-          <h2>Disfruta</h2>
-          <h3>de la magia de</h3>
-          </div>
-          <div className='hh2'>
-          <h2>comer rico y sano </h2>
-          <h3>sin cocinar en tu casa</h3>
-          </div> */}
         </div>
         
         <div className="container__prod">
@@ -124,6 +137,158 @@ export const Products = () => {
             </div>
             <div className='h3__cat'>
             <h3>Postres</h3>
+            </div>
+            </div>
+
+
+            <div className='pruebaProductos'>
+              <h1>Platos Listos</h1>
+            <div className='pruebaProductosDiv'>
+                <img src={pack} alt='pack' className='img_pack'/>
+                  <div className='pruebaProductosContImg'>
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={pastel} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Pastel de papas</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={carne} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Carne braseada con arroz</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={carre} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
+                        <Card.Title className='card_title_prueba'>Carre de cerdo con pure de batatas</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={canelones} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Canelones con salsa</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={risoto} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Risoto</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={carne2} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
+                        <Card.Title className='card_title_prueba'>Carne braseada con cremoso de papas</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={albondigas} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Albondigas con arroz</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={lasagna} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Lasagna</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                  </div>
+            </div>
+            </div>
+
+            <div className='pruebaProductos'>
+              <h1>Wraps</h1>
+            <div className='pruebaProductosDiv'>
+                <img src={pack2} alt='pack' className='img_pack'/>
+                  <div className='pruebaProductosContImg'>
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={wrap1} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Carne braseada</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={wrap2} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Jamón y queso</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={wrap3} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
+                        <Card.Title className='card_title_prueba'>Pollo</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={wrap4} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Vegetales grillados</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={wrap5} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Vegetales</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+
+                  </div>
+            </div>
+            </div>
+
+
+
+            <div className='pruebaProductos'>
+              <h1>Tartas</h1>
+            <div className='pruebaProductosDiv'>
+                <img src={pack3} alt='pack' className='img_pack'/>
+                  <div className='pruebaProductosContImg'>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={tarta1} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
+                        <Card.Title className='card_title_prueba'>Bicolor</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={tarta2} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Jamón y queso</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={tarta3} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Vegetales</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_prueba'>
+                        <Card.Img variant="top" src={tarta4} className='card_pastel'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Pollo</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+
+                  </div>
             </div>
             </div>
     </div>
