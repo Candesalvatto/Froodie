@@ -24,6 +24,11 @@ import tarta1 from '../../public/src/assets/img/bicolor.png'
 import tarta2 from '../../public/src/assets/img/jyqtarta.png'
 import tarta3 from '../../public/src/assets/img//vegtartar.png'
 import tarta4 from '../../public/src/assets/img/pollotarta.png'
+import pack4 from '../../public/src/assets/img/IMG_0463.png'
+import chocotorta from '../../public/src/assets/img/receta-chocotorta2.jpg'
+import postreOreo from '../../public/src/assets/img/oreo.png'
+import mousseNaranja from '../../public/src/assets/img/mousse.jpg'
+import tiraisu from '../../public/src/assets/img/tiramisu.png'
 import Card from 'react-bootstrap/Card';
 
 export const Products = () => {
@@ -208,39 +213,39 @@ export const Products = () => {
 
             <div className='pruebaProductos'>
               <h1>Wraps</h1>
-            <div className='pruebaProductosDiv'>
+            <div className='pruebaProductosDivWrap'>
                 <img src={pack2} alt='pack' className='img_pack'/>
-                  <div className='pruebaProductosContImg'>
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={wrap1} className='card_pastel'/>
+                  <div className='pruebaProductosContImgWrap'>
+                        <Card className='card_pruebawrap'>
+                        <Card.Img variant="top" src={wrap1} className='card_wrap'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
                         <Card.Title className='card_title_prueba'>Carne braseada</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={wrap2} className='card_pastel'/>
+                        <Card className='card_pruebawrap'>
+                        <Card.Img variant="top" src={wrap2} className='card_wrap'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
                         <Card.Title className='card_title_prueba'>Jamón y queso</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={wrap3} className='card_pastel'/>
+                        <Card className='card_pruebawrap'>
+                        <Card.Img variant="top" src={wrap3} className='card_wrap'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
                         <Card.Title className='card_title_prueba'>Pollo</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={wrap4} className='card_pastel'/>
+                        <Card className='card_pruebawrap'>
+                        <Card.Img variant="top" src={wrap4} className='card_wrap'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
                         <Card.Title className='card_title_prueba'>Vegetales grillados</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={wrap5} className='card_pastel'/>
+                        <Card className='card_pruebawrap'>
+                        <Card.Img variant="top" src={wrap5} className='card_wrap'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
                         <Card.Title className='card_title_prueba'>Vegetales</Card.Title>
                         </Card.Body>
@@ -255,35 +260,75 @@ export const Products = () => {
 
             <div className='pruebaProductos'>
               <h1>Tartas</h1>
-            <div className='pruebaProductosDiv'>
+            <div className='pruebaProductosDivTarta'>
                 <img src={pack3} alt='pack' className='img_pack'/>
-                  <div className='pruebaProductosContImg'>
+                  <div className='pruebaProductosContImgTarta'>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={tarta1} className='card_pastel'/>
+                        <Card className='card_pruebatarta'>
+                        <Card.Img variant="top" src={tarta1} className='card_tarta'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
                         <Card.Title className='card_title_prueba'>Bicolor</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={tarta2} className='card_pastel'/>
+                        <Card className='card_pruebatarta'>
+                        <Card.Img variant="top" src={tarta2} className='card_tarta'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
                         <Card.Title className='card_title_prueba'>Jamón y queso</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={tarta3} className='card_pastel'/>
+                        <Card className='card_pruebatarta'>
+                        <Card.Img variant="top" src={tarta3} className='card_tarta'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
                         <Card.Title className='card_title_prueba'>Vegetales</Card.Title>
                         </Card.Body>
                         </Card>
 
-                        <Card className='card_prueba'>
-                        <Card.Img variant="top" src={tarta4} className='card_pastel'/>
+                        <Card className='card_pruebatarta'>
+                        <Card.Img variant="top" src={tarta4} className='card_tarta'/>
                         <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
                         <Card.Title className='card_title_prueba'>Pollo</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+
+                  </div>
+            </div>
+            </div>
+
+
+            <div className='pruebaProductos'>
+              <h1>Postres</h1>
+            <div className='pruebaProductosDivPostre'>
+                <img src={pack4} alt='pack' className='img_pack'/>
+                  <div className='pruebaProductosContImgPostre'>
+
+                        <Card className='card_pruebaPostres'>
+                        <Card.Img variant="top" src={mousseNaranja} className='card_postre'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C4B5A1' }}>
+                        <Card.Title className='card_title_prueba'>Mousse de Naranja</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_pruebaPostres'>
+                        <Card.Img variant="top" src={chocotorta} className='card_postre'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Chocotorta</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_pruebaPostres'>
+                        <Card.Img variant="top" src={tiraisu} className='card_postre'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#C6B4B0' }}>
+                        <Card.Title className='card_title_prueba'>Tiramisu</Card.Title>
+                        </Card.Body>
+                        </Card>
+
+                        <Card className='card_pruebaPostres'>
+                        <Card.Img variant="top" src={postreOreo} className='card_postre'/>
+                        <Card.Body className='card_body' style={{ backgroundColor: '#A28B87' }}>
+                        <Card.Title className='card_title_prueba'>Postre Oreo</Card.Title>
                         </Card.Body>
                         </Card>
 

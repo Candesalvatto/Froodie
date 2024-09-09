@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container, Offcanvas,  Image } from 'react-bootstrap';
+import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap';
 import { useState } from 'react';
 
 export const NavBar = () => {
@@ -12,14 +12,9 @@ export const NavBar = () => {
     <Navbar expand="lg" sticky="top" className='NavBar'>
       <Container fluid>
         <Navbar.Brand href="#home">
-          <Image
-            src="../../public/src/assets/img/logo-froodie-blanco-sin-fondo.png"
-            className="d-inline-block align-top logo-nav"
-            alt="Froodie logo"
-          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
-        <Navbar.Collapse className="justify-content-end d-none d-lg-flex">
+        <Navbar.Collapse className="justify-content-center d-none d-lg-flex">
           <Nav className='link_c'>
             <Nav.Link className='nav_link' href="#productos">Productos</Nav.Link>
             <Nav.Link className='nav_link' href="#sobre-nosotros">Sobre Nosotros</Nav.Link>
