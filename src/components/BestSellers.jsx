@@ -1,78 +1,104 @@
 import Card from 'react-bootstrap/Card';
-import Carre from '../../public/src/assets/img/carre.jpg'
-import PolloWrap from '../../public/src/assets/img/pollowrap.jpg'
-import Pastel from '../../public/src/assets/img/pastel.jpg'
 import { Clock } from 'react-bootstrap-icons';
 import { InfoCircle } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { collection, getDocs } from 'firebase/firestore';
+import { useState, useEffect } from 'react';
+import { db } from '../database/firebaseConfig';
 
 export const BestSellers = () => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        console.log('Intentando conectar a Firestore...');
+        const productsRef = collection(db, 'productos');
+        const snapshot = await getDocs(productsRef);
+        console.log('Colección seleccionada:', productsRef.path);
+        console.log('Conectado correctamente');
+        const fetchedProducts = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setProducts(fetchedProducts);
+      } catch (error) {
+        console.error('Error al obtener productos:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+console.log(products)
+  
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <div className="bests-sellers-cont-gral">
         <div className="best__h">
-            <h1>CONOCÉ NUESTROS PRODUCTOS MÁS POPULARES</h1>
-            <h2>Favoritos destacados</h2>
+        <h2>¿CUÁL ES TU FROODIE PREFERIDO?</h2>
+            <h1>DESLIZÁ PARA CONOCER TODOS NUESTROS PRODUCTOS</h1>
+
         </div>
-        <div className="cards_best_cont">
-                <Card className='card_best_seller'>
-            <Card.Img variant="top" src={Carre} className='img_best' />
+
+        <div className="cards_best_cont2">
+        <Slider {...settings}>
+        {products.map(product => (
+                <Card className='card_best_seller' key={product.id}>
+            <Card.Img variant="top" src={product.img} className='img_best' />
             <Card.Body>
-                <Card.Title className='title_b_s'>Carré de cerdo a la mostaza y miel con puré de batatas</Card.Title>
+                <Card.Title className='title_b_s'>{product.nombre}</Card.Title>
                     <div className='cook_cont_'>
                     <Button>
                     <Clock  className='clock-icon'/> 
-                    <p>7 MINUTOS</p>   
+                    <p>{product.tiempo} MINUTOS</p>   
                     </Button>
                     <Button className='button_b2'>
                     <InfoCircle className='clock-icon'/> 
-                    <p>300 GRAMOS</p>   
+                    <p>{product.peso} GRAMOS</p>   
                     </Button>
                     </div>
             </Card.Body>
             </Card>
-
-    <Card className='card_best_seller'>
-      <Card.Img variant="top" src={PolloWrap} className='img_best' />
-      <Card.Body>
-        <Card.Title className='title_b_s'>Wrap de pollo</Card.Title>
-        <div className='cook_cont_'>
-        {/* <Card.Text className='inf_cook'> 
-        <Clock size={15} color="black"  className='clock-icon'/>
-        <p>5 MINUTOS</p>
-        </Card.Text>
-        <Card.Text className='inf_cook'> 
-        <InfoCircle size={15} color="black" />
-        <p>210 GRAMOS</p>
-        </Card.Text> */}
-        <Button>
-                    <Clock  className='clock-icon'/> 
-                    <p>5 MINUTOS</p>   
-                    </Button>
-                    <Button className='button_b2'>
-                    <InfoCircle className='clock-icon'/> 
-                    <p>210 GRAMOS</p>   
-                    </Button>
-        </div>
-      </Card.Body>
-    </Card>
-
-    <Card className='card_best_seller'>
-      <Card.Img variant="top" src={Pastel} className='img_best' />
-      <Card.Body>
-        <Card.Title className='title_b_s'>Pastel de papas</Card.Title>
-        <div className='cook_cont_'>
-        <Button>
-                    <Clock  className='clock-icon'/> 
-                    <p>7 MINUTOS</p>   
-                    </Button>
-                    <Button className='button_b2'>
-                    <InfoCircle className='clock-icon'/> 
-                    <p>400 GRAMOS</p>   
-                    </Button>
-        </div>
-      </Card.Body>
-    </Card>
+  ))}
+    </Slider>
         </div>
     </div>
+
   )
 }

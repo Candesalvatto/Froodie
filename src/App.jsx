@@ -53,9 +53,10 @@ function App() {
     <Banner/>
     <Products/>
     <Meet/>
+    <LocationsPoint/>
     {/* <Experiencies/> */}
     <InfFabric/>
-    <LocationsPoint/>
+
     <BestSellers/>
     <FormContact/>
     <Footer/>

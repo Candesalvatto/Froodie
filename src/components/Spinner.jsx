@@ -5,7 +5,6 @@ export const Spinner = () => {
     const counterRef = useRef(null);
   
     useEffect(() => {
-      // Función para iniciar el loader
       const startLoader = () => {
         const updateCounter = () => {
           setCurrentValue(prevValue => {
@@ -31,7 +30,7 @@ export const Spinner = () => {
       };
   
       startLoader();
-    }, []); // Solo corre una vez cuando el componente se monta
+    }, []); 
   
     return (
       <div className="loading-container">

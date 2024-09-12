@@ -1,21 +1,23 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAVhsmXWUB9gN1s_LV7uNzlhTcgrXAj0xk",
-  authDomain: "froodie-e7d6c.firebaseapp.com",
-  projectId: "froodie-e7d6c",
-  storageBucket: "froodie-e7d6c.appspot.com",
-  messagingSenderId: "630985505652",
-  appId: "1:630985505652:web:d4e28c06e5cfdec11dca21",
-  measurementId: "G-1F6KZRR3X7"
+  apiKey: "AIzaSyAtlWO0IjCUgm0OBi8nVMU45spUpoGXWL8",
+  authDomain: "froodie-51320.firebaseapp.com",
+  projectId: "froodie-51320",
+  storageBucket: "froodie-51320.appspot.com",
+  messagingSenderId: "545614635426",
+  appId: "1:545614635426:web:3e7ce00bc5e1e3c7cb12fb",
+  measurementId: "G-WG9WB5XTJB"
 };
 
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
-export { db, analytics };
+export { db };
+
+
+
+

@@ -1,12 +1,7 @@
-// import Baner from '../../public/src/assets/img/meal-plan-with-copy-space-lots-vegetables-pasta.jpg'
-//  import Slinte from '../../public/src/assets/img/slinte-yellow.png'
 import { XyzTransitionGroup } from '@animxyz/react'
 
 
-
 export const Banner = () => {
-
-
 
   const letters = ['f', 'r', 'o', 'o', 'd', 'i', 'e'];
   const numElements = 10
@@ -15,29 +10,7 @@ export const Banner = () => {
   return (
     <div className='banner-primary'>
         <div className='banner-secundary'>
-            {/* <div className='banner-slinte'>
-                <img src={Slinte} alt='slinte'/>
-                    <div className='banner-text'>
-                    <h1>EN TU MESA Y EN TU CASA</h1>
-                    <h2>O EN CUALQUIERA LADO</h2>
-                    <h3>Traemos comidas y sabores apetecibles y caseros, listos para cualquier hora y en cualquier lugar</h3>
-                    </div>
-            </div>
-            <div className='banner-img'>
-                <img src={Baner} alt='image-banner'/>
-            </div> */}
-
             <div className="overlay">
-              {/* <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div> */}
               <XyzTransitionGroup
   appear
   className="overlay-cont"
