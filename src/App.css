@@ -130,7 +130,7 @@ position: relative;
 border: 2px solid green;
 }
 
-.banner-img{
+/* .banner-img{
   z-index: 1;
 }
 .banner-img img{width: 100%;
@@ -166,7 +166,7 @@ overflow: hidden;
   margin-left: 60px;
   margin-top: 40px;
 
-}
+} */
 
 .loading-container{
   width: 100vw;
@@ -295,6 +295,7 @@ line-height: 2;
        }
        .counter{
         font-size: 33vw;
+        padding-bottom: 100px;
       }
 }
 
@@ -348,7 +349,7 @@ line-height: 2;
 .products-cont-gral7{
 width: 100%;
 height: 500px;
-border:1px solid red;
+
 
 }
 .CARD_CON{
@@ -359,7 +360,7 @@ justify-content: center;
 align-items: center;
 width: 90%;
 margin: auto;
-border:1px solid green;
+
 
 }
 .CARD7{
@@ -391,6 +392,7 @@ width: 350px;
 
 .CARD_T{
   font-family:  Tusker Grotesk ;
+  color: #393b3b;
 }
 
 .cimg{
@@ -532,7 +534,7 @@ width: 350px;
   }
   .products-cont-gral7{
     width: 100%;
-    height: 1800px;
+    height: 1250px;
     }
     .CARD_CON{
       display: flex;
@@ -552,6 +554,9 @@ flex-direction: column;
     .CARD_FLECHA{
       width: 35px;
     }
+    .CARD_T{
+      padding-top: 3px;
+    }
     
     .cimg{
       height: 200px;
@@ -560,10 +565,10 @@ flex-direction: column;
       .cdetail{
         position: relative;
         z-index: 2;
-        background-color: #e0dec7;
+        background-color: #fcd23e;
         border-radius: 10px;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         opacity: 0;
         border-radius: 70px 50px 70px 60px;
       }
@@ -572,27 +577,27 @@ flex-direction: column;
         z-index: 2;
         background-color: #fcd23e;
         border-radius: 10px;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         opacity: 0;
         border-radius: 70px 50px 70px 60px;
-
       }
       .cdetail ul{
-        font-size: 0.8em;
         font-family:  Bahnschrift Regular;
         margin:10px auto;
         }
         .cdetail ul li{ 
           padding: 2px;
+          color: #000;
+          font-size: 1em;
           }
           .cdetail_ ul li{ 
             padding: 1.5px;
             color: #000;
+            font-size: 0.8em;
             }
         .cdetail_ ul{
           list-style: none;
-          font-size: 0.6em;
           font-family:  Bahnschrift Regular;
           }
 }
@@ -709,37 +714,6 @@ height: 100px;
   letter-spacing: 2px;
 }
 
-/* .social_co{
-  width: 30%;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  position: fixed;
-}
-.social_co img{
-width: 100%;
-} */
-/* .social_co h1{
-  color: white;
-  font-size: 1.8em;
-  font-family:  Bahnschrift Regular;
-} */
-/* .social_co_i{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-} */
-/* .social_co_i img{
-  width: 50px;
-  height: 50px;
-}
-.social_co_i a{
-  color: white;
-  font-family:  Tusker Grotesk ;
-  font-size: 2.5em;
-  padding-left: 20px;
-  text-decoration: none;
-} */
 
 .distr_inf{
   margin-top: 80px;
@@ -850,6 +824,7 @@ height: 50px;
   margin: auto;
   bottom: 0;
   position: fixed;
+  height: 350px;
   }
   
 .cont_footer img{
@@ -881,6 +856,7 @@ height: 50px;
   width: 100%;
 vertical-align: middle;
 height: 50px;
+
 }
 
 .social_co_i2 img {
@@ -895,6 +871,7 @@ height: 50px;
 }
 .distr_inf{
   margin-top: 20px;
+  
 }
 .distr_inf h2{
   color: white;
@@ -924,8 +901,10 @@ letter-spacing: 0px!important;
 font-size: 0.6em;
 color: #edece2;
 margin-top: 10px;
+
 }
 }
+/* nesletter*/
 
 
 .cont-form-gral{
@@ -1194,127 +1173,22 @@ margin: 150px auto;
 .fabric{width: 350px;
 }
   .text-fab h1{
-  font-size: 2.5em;
+  font-size: 2.7em;
   margin-top: 30px;
   }
   
   .text-fab h2{
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 30px;
   }
   .text-fab button{
     width: 70%;
     color: #edece2;
-  font-size: 1.2em;
-  padding: 1px;
+  font-size: 1.5em;
+  padding: 3px;
 
   }
 }
-
-/* 
-.cont-exp-gral{
-  width: 100%;
-  height: 800px;
-  background-color: #edece2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 150px;
-}
-
-.exp-col{
-  width: 85%;
-  height: 700px;
-  margin: auto;
-  background-color: #F0D7B0;
-  border-radius: 20px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.img-exp{
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  z-index: 1;
-  position: absolute;
-
-}
-
-.slinte-cont-exp{
-  z-index: 2;
-  position: absolute;
-  bottom: 0; 
-  right: 0;
-  width: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 30px;
-  margin-bottom: 40px;
-
-}
-
-.slinte-exp{
-  width: 100%;
-}
-
-.slinte-cont-exp h1{
-  z-index: 3;
-  color: #edece2;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 3.5em;
-  position: absolute;
-  padding-bottom: 150px;
- padding-left: 50px;
- font-family:  Tusker Grotesk ;
- 
-
-}
-.slinte-cont-exp h2{
-  z-index: 3;
-  color: #edece2;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.5em;
-  position: absolute;
-padding-top: 150px;
-padding-left: 50px;
-padding-right: 40px;
-font-family:  Tusker Grotesk ;
-}
-
-.slinte-cont-exp button{
-  position: absolute;
-  width: 50%;
-  margin-top: 350px;
-  left: 0;
-  margin-left: 50px;
-  background-color: #00a950;
-  color: #edece2;
-  border: 1px solid #00a950;
-  border-radius: 20px;
-  padding: 3px;
-  letter-spacing: 3px;
-  font-family: Burgers Perfect Regular;
-  font-size: 1.5em;
-}
-
-.slinte-cont-exp button:hover{
-  background-color: #393b3b;
-  border: 1px solid #393b3b;
-  transition: 0.5s ease;}
-
-  
-@media (min-width: 481px) and ( max-width: 850px) {}
-@media (max-width: 480px) {} */
-
 
 /*BEST SELLERS*/
 
@@ -1357,13 +1231,31 @@ font-family:  Tusker Grotesk ;
   border: 1px solid #dedcc7;
   height: 600px;
   margin: 0 auto 30px auto;
+}
+.card_best_seller:hover{
+  background-color: #fcd23e;
+}
+.card_best_seller:hover .title_b_s{
+  color: #000;
+}
+.card_best_seller:hover .img_best{
+  transform: scale(1.02);
+}
+.card_best_seller:hover .cook_cont_ Button p{
+  color: black;
+}
 
+.card_best_seller:hover .clock-icon{
+  color: black;
 }
 
 .img_best{
   height: 350px;
   object-fit: cover;
   border-radius: 20px;
+}
+.img_best:hover{
+transform: scale(1.02);
 }
 
 .title_b_s{
@@ -1385,7 +1277,6 @@ margin-bottom: 15px;
 width: 30px;
 }
 
-
 .cook_cont_ Button{
   background-color: #edece2;
   border-radius: 20px;
@@ -1403,6 +1294,7 @@ border: 1px solid #edece2;}
   margin: auto;
 
 }
+
 
 .button_b2{
   margin-left: 20px;
@@ -1487,24 +1379,27 @@ margin-left: 5px;}
 }
 .cards_best_cont2{
   width: 95%;
-margin-top: 20px;
+margin: 20px auto;
 
 }
 
 .card_best_seller{
-  padding: 10px;
-  width: 170px!important;
-  height: 340px;
+  padding: 15px;
+  width: 300px!important;
+  height: 480px;
   margin-bottom: 50px;
+margin-left: 30px;
+
+
 }
 .img_best{
-  height: 170px;
+  height: 250px;
   object-fit: cover;
   border-radius: 20px;
 }
 
 .title_b_s{
-font-size: 1.1em;}
+font-size: 1.5em;}
 
 .cook_cont_{
   display: flex;
@@ -1513,22 +1408,23 @@ font-size: 1.1em;}
   width: 100%;
   margin-bottom: 15px;
 left: 0;
-margin-left: 2px;
+;
+
   }
   
   .clock-icon{
     color: #393b3b;
-  width: 30px;
+  width: 40px;
   }
   .button_b2{
-    margin-left: 5px;
+    margin-left: 3px;
   }
   .cook_cont_ Button p{
-    font-size: 0.5em;  
+    font-size: 1em;  
   }
   .clock-icon{
     color: #393b3b;
-  width: 15px;
+  width: 25px;
   }
   
   
@@ -1562,9 +1458,11 @@ margin-left: 2px;
   margin: 40px auto;
   background-image: url(../public/src/assets/img/banner-cook.png);
   object-fit: contain;
-  background-size: 100%;
+
   overflow: hidden;
   border-radius: 20px;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .h_co{
@@ -1627,6 +1525,8 @@ margin: auto;
 @media (min-width: 481px) and ( max-width: 850px) {
   .cook_inst{
     width: 90%;
+    background-size: cover; 
+    background-repeat: no-repeat;
   }
   
   
@@ -1671,11 +1571,14 @@ margin: auto;
   }
 }
 @media (max-width: 480px) {
+
   .meet-cont-gral{
     padding-top: 0px;
   }
   .cook_inst{
     width: 95%;
+    background-size: cover; 
+    background-repeat: no-repeat;
   }
   
   .h_co h1{
