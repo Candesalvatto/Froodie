@@ -54,14 +54,14 @@ console.log(products)
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
@@ -69,11 +69,10 @@ console.log(products)
   };
 
   return (
-    <div className="bests-sellers-cont-gral">
+    <div className="bests-sellers-cont-gral" id="productos">
         <div className="best__h">
         <h2>¿CUÁL ES TU FROODIE PREFERIDO?</h2>
             <h1>DESLIZÁ PARA CONOCER TODOS NUESTROS PRODUCTOS</h1>
-
         </div>
 
         <div className="cards_best_cont2">

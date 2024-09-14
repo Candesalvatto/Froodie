@@ -6,7 +6,6 @@ import { Products } from './components/Products';
 import { Footer } from './components/Footer';
 import { FormContact } from './components/FormContact';
  import { InfFabric } from './components/InfFabric';
-// import { Experiencies } from './components/Experiencies';
 import { BestSellers } from './components/BestSellers';
 import { Meet } from './components/Meet';
 import { LocationsPoint } from './components/LocationsPoint';
@@ -20,14 +19,13 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simular carga de recursos o espera de la carga completa
+
     const handleLoad = () => {
       setTimeout(() => {
-        setLoading(false); // Simula que todo está cargado
-      }, 2000); // Puedes ajustar el tiempo de carga simulado
+        setLoading(false); 
+      }, 2000); 
     };
 
-    // Escuchar el evento de carga completa del DOM
     if (document.readyState === 'complete') {
       handleLoad();
     } else {
@@ -40,7 +38,6 @@ function App() {
   }, []);
 
   if (loading) {
-    // Mostrar el spinner mientras la página está cargando
     return <Spinner />;
   }
 
@@ -54,10 +51,8 @@ function App() {
     <Products/>
     <Meet/>
     <LocationsPoint/>
-    {/* <Experiencies/> */}
-    <InfFabric/>
-
-    <BestSellers/>
+    <InfFabric />
+    <BestSellers />
     <FormContact/>
     <Footer/>
       

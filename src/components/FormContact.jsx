@@ -111,7 +111,7 @@ export const FormContact = () => {
 
 
       <Container className='letter'>
-        <Col className="align-items-center">
+        <Col className="align-items-center letter-cont-col">
           <Col className='letter-1'>
             <h1>Suscribite a nuestro newletter</h1>
             <h2>Recibe información de Froodie cada semana para estar al día con las novedades</h2>
