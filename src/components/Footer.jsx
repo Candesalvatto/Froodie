@@ -11,9 +11,9 @@ export const Footer = () => {
       <Row>
         <Col xs={5} className=' C-1 d-flex flex-column  '>
         <img src={Logo} alt="logoFroodie"/>
-        <a href="">Sobre Nosotros</a>
-        <a href="">Nuestros Productos</a>
-        <a href="">Contáctenos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#productos">Nuestros Productos</a>
+        <a href="#contacto">Contáctenos</a>
         </Col>
 
 

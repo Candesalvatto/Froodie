@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family:  Bahnschrift Regular;
-	src: url('../public/src/assets/font/Bahnschrift\ Regular.ttf');
+	src: url('../public/src/assets/font/bahnschrift.ttf');
 }
 
 @font-face {
@@ -284,7 +284,6 @@ height: 500px;
     
      .bar{
       height: 620px;
-      border: 1px solid blue;
      }
      .item-group{
       height: 200px;
@@ -369,21 +368,10 @@ margin: auto;
 
 }
 .CARD7{
-  height: 350px;
-width: 350px;
+width: 280px;
+height: 280px;
   transition: all 1.5s ease;
-  margin: 10px;
-}
-
-.CARD7:hover .cdetail {
-  transform: scale(1.3);
-  transition: 1s;
-  opacity: 1;
-}
-.CARD7:hover .cdetail_ {
-  transform: scale(1.3);
-  transition: 1s;
-  opacity: 1;
+  margin: auto;
 }
 
 
@@ -400,11 +388,6 @@ width: 350px;
   color: #393b3b;
 }
 
-.cimg{
-  position:absolute;
-  z-index: 1;
-  height: 300px;
-  width: 300px;}
 .cdetail{
   position: relative;
   z-index: 2;
@@ -440,14 +423,55 @@ width: 350px;
     font-family:  Bahnschrift Regular;
     margin: auto;
     }
-  
+.flip-gral{
+  width: 90%;
+  margin: auto;
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+}
+    .flip-cont{
+      width: 30%;
+      margin: auto;
+
+      width: 380px;
+    }
+    .CARD8{
+      width: 280px;
+      height: 280px;
+      background-image: url("../public/src/assets/img/Slinte-nude.png");
+      background-size: 100%;
+      transition: transform 1.8s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .CARD8 ul li{
+color: #393b3b;
+font-family:  Bahnschrift Regular;
+font-size: 0.9em;
+    }
+    .CARD8UL li{
+      color: #393b3b;
+font-family:  Bahnschrift Regular;
+font-size: 1.2em!important;
+    }
 
 
 @media (min-width: 481px) and ( max-width: 850px) {
-  .products-cont-gral7{
-    width: 100%;
-    height: 700px;
+
+    .flip-gral{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
     }
+        .flip-cont{
+          margin:auto ;
+          width: 250px;
+        }
     .CARD_CON{
       display: flex;
       flex-wrap: wrap; 
@@ -456,18 +480,19 @@ width: 350px;
     
     }
     .CARD7{
-      height: 250px;
-    width: 250px;
+      height: 180px;
+    width: 180px;
       transition: all 1.5s ease;
-      margin: 40px 20px;
+
     }
+    .CARD8{
+      width: 180px;
+      height: 180px;
+    }
+    .CARD8 ul li{
+      font-size: 0.5em;
+          }
     
-.text-product-h{
-  width: 85%;
-  margin:auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 .text-product-h h1{
 	font-family: Burgers Perfect Regular;
@@ -482,39 +507,19 @@ width: 350px;
   width: 70%;
   font-weight: 600;
 }
-.CARD_IMG{
+/* .CARD_IMG{
   width: 100%;
+} */
+.CARD_T{
+  padding-top: 3px;
+  font-size: 1.6em;
 }
 
 .CARD_FLECHA{
   width: 30px;
 }
 
-.cimg{
-  position:absolute;
-  z-index: 1;
-  height: 200px;
-  width: 200px;}
-  .cdetail{
-    position: relative;
-    z-index: 2;
-    background-color: #e0dec7;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    border-radius: 90px 110px 80px 120px;
-  }
-  .cdetail_{
-    position: relative;
-    z-index: 2;
-    background-color: #e0dec7;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    border-radius: 90px 110px 80px 120px;
-  }
+
 }
 @media (max-width: 480px) {
   .text-product-h{
@@ -537,10 +542,7 @@ width: 350px;
     width: 80%;
     font-weight: 600;
   }
-  .products-cont-gral7{
-    width: 100%;
-    height: 1250px;
-    }
+
     .CARD_CON{
       display: flex;
 flex-direction: column;
@@ -552,8 +554,6 @@ flex-direction: column;
       height: 200px;
     width: 200px;
       transition: all 1.5s ease;
-      margin: 0px auto 110px auto;
-
     }
     
     .CARD_FLECHA{
@@ -562,49 +562,31 @@ flex-direction: column;
     .CARD_T{
       padding-top: 3px;
     }
-    
-    .cimg{
+    .CARD8{
+      width: 200px;
       height: 200px;
-      width: 200px;}
+    }
+    .CARD8 ul li{
+color: #393b3b;
+font-family:  Bahnschrift Regular;
+font-size: 0.6em;
+    }
+    .flip-gral{
+      width: 100%;
+      margin: auto;
+      height: 1500px;
+      flex-direction: column;
 
-      .cdetail{
-        position: relative;
-        z-index: 2;
-        background-color: #fcd23e;
-        border-radius: 10px;
-        width: 250px;
-        height: 250px;
-        opacity: 0;
-        border-radius: 70px 50px 70px 60px;
-      }
-      .cdetail_{
-        position: relative;
-        z-index: 2;
-        background-color: #fcd23e;
-        border-radius: 10px;
-        width: 250px;
-        height: 250px;
-        opacity: 0;
-        border-radius: 70px 50px 70px 60px;
-      }
-      .cdetail ul{
-        font-family:  Bahnschrift Regular;
-        margin:10px auto;
+    }
+        .flip-cont{
+          margin: 10px auto;
+          width: 200px;
+
         }
-        .cdetail ul li{ 
-          padding: 2px;
-          color: #000;
-          font-size: 1em;
-          }
-          .cdetail_ ul li{ 
-            padding: 1.5px;
-            color: #000;
-            font-size: 0.8em;
-            }
-        .cdetail_ ul{
-          list-style: none;
-          font-family:  Bahnschrift Regular;
-          }
+    
+
+
+
 }
 
 
@@ -620,14 +602,6 @@ flex-direction: column;
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-
-/* .copyrigth{
-  display: flex;
-  flex-direction: column;
-  justify-content:end;
-  align-items:center;
-  position: fixed;
-} */
 
 .C-3{
   display: flex;
@@ -1404,7 +1378,7 @@ margin-left: 30px;
 }
 
 .title_b_s{
-font-size: 1.5em;}
+font-size: 1.6em;}
 
 .cook_cont_{
   display: flex;

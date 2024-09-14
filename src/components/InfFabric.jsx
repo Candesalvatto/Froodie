@@ -8,7 +8,7 @@ export const InfFabric = () => {
             <div className="text-fab">
                 <h1>Detrás de Froodie</h1>
                 <h2>Utilizamos tecnología de vanguardia en nuestros procesos para garantizar alimentos de calidad internacional. Nuestro objetivo es estar a la evolución de la industria, brindando platos listos y congelados, de alta calidad, adaptados a las necesidades del mercado argentino y latinoamericano.</h2>
-            <button>MÁS INFORMACIÓN</button>
+            <button onClick={() => window.open('https://www.coolmeals.com.ar/productos', '_blank')}>MÁS INFORMACIÓN</button>
             </div>
             
             <div className='img-fab'>
