@@ -5,6 +5,9 @@ import Tarta from '../../public/src/assets/img/testtarta.png'
 import Flecha from '../../public/src/assets/img/flecha.png'
 import ReactCardFlip from 'react-card-flip';
 import { useState } from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
@@ -20,6 +23,37 @@ export const Products = () => {
     setFlippedCards(newFlippedCards); 
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 0,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <div className="products-cont-gral">
@@ -28,7 +62,7 @@ export const Products = () => {
           <h2>Disfruta de la magia de comer rico y sano sin cocinar en tu casa</h2>
         </div>    
             <div className='flip-gral'>
-
+<Slider {...settings}>
             <div className='flip-cont'>
             <ReactCardFlip flipDirection='horizontal' isFlipped={flippedCards[0]}>
                                               <div className="CARD7" onClick={() => flipCard(0)}>
@@ -105,7 +139,7 @@ export const Products = () => {
             <img src={Flecha} alt='flecha' className='CARD_FLECHA'/>
             <h1 className='CARD_T'>Postres</h1>
             </div>
-
+            </Slider>
             </div>
 
     </div>
