@@ -1685,7 +1685,106 @@ text-align: center;
   }
 }
 
+/*NOT FOUND*/
+
+.not-found{
+  background-color: #fcd23e;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found h1{
+  font-family:  Tusker Grotesk ;
+  color: #D43F64;
+  font-size: 5em;
+}
+.not-found h2{
+  font-family:  Tusker Grotesk ;
+  color: #D43F64;
+}
+
 
 @media (min-width: 481px) and ( max-width: 850px) {}
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .not-found h1{
+    font-size: 3em;
+  }
+}
+/* Polit privacidad*/
 
+.cont_priv_gral{
+  background-color: #D43F64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.politic{
+  width: 80%;
+  margin-top: 50px;
+}
+
+.politic h2{
+  color: white;
+  font-family:  Bahnschrift Regular;
+  font-size: 1.2em;
+}
+.politic h3{
+  color: white;
+  font-family:  Bahnschrift Regular;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.Termsycond{
+  width: 80%;
+  margin-top: 50px;
+}
+
+.Termsycond h2{
+  color: white;
+  font-family:  Bahnschrift Regular;
+  font-size: 1.2em;
+}
+.Termsycond h3{
+  color: white;
+  font-family:  Bahnschrift Regular;
+  font-size: 2em;
+  margin-top: 30px;
+}
+@media (min-width: 481px) and ( max-width: 850px) {
+  .politic h2{
+    font-size: 1em;
+  }
+  .politic h3{
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  .Termsycond h2{
+    font-size: 1em;
+  }
+  .Termsycond h3{
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .politic h2{
+    font-size: 0.8em;
+  }
+  .politic h3{
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
+  .Termsycond h2{
+    font-size: 0.8em;
+  }
+  .Termsycond h3{
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
+}

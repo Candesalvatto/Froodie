@@ -44,8 +44,7 @@ function App() {
 
 
   return (
-    <>
-
+    <div id='home'>
     <NavBar/>
     <Banner/>
     <Products/>
@@ -55,8 +54,7 @@ function App() {
     <BestSellers />
     <FormContact/>
     <Footer/>
-      
-    </>
+    </div>
   )
 }
 

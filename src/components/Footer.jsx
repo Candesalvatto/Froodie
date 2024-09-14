@@ -34,8 +34,8 @@ export const Footer = () => {
 
         <Row className='C-3'>
         <div className='pol_con'>
-        <a href="" >Condiciones de uso</a>
-        <a href="">Política de privacidad</a>
+        <a href="politica-privacidad" >Condiciones de uso</a>
+        <a href="politica-privacidad">Política de privacidad</a>
         </div>
         <span>©2024 Froodie. Todos los derechos reservados.</span>
         </Row>
