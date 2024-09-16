@@ -382,7 +382,8 @@ display: flex;
 transform: rotate(7deg);
 justify-content: center;
 align-items:center ;
-  transition: all 0.5s ease;
+  transition: transform 0.15s ease, background-color 0.1s ease;
+  transition-duration: 0.1s;
   margin: auto;
   background-color: #DFDCC1; 
   border-radius: 45% 31% 30% 29% / 38% 40% 39% 29% ; 
@@ -390,6 +391,7 @@ align-items:center ;
 .CARD7:hover{
   background-color: #00a94fa5; 
   transform: scale(1.1) rotate(-5deg);
+  transition: transform 0.15s ease-in-out
 }
 
 
@@ -398,7 +400,7 @@ align-items:center ;
 }
 .CARD7:hover .CARD_IMG{
   transform: scale(1.1);
-  transition: all 0.5s ease;
+  transition: transform 0.15s ease;
 }
 
 .CARD_FLECHA{
@@ -433,7 +435,8 @@ align-items:center ;
       background-color: #DFDCC1; 
       border-radius: 45% 31% 30% 29% / 38% 40% 39% 29% ; 
       transform: rotate(7deg);
-      transition: all 0.5s ease;
+      transition-duration: 0.1s;
+      transition: transform 0.15s ease;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -443,6 +446,7 @@ align-items:center ;
     .CARD8:hover{
       background-color: #00a94fa5; 
       transform: scale(1.1) rotate(0deg);
+      transition: transform 0.15s ease;
     }
     .CARD8 ul li{
 color: #393b3b;
