@@ -186,6 +186,7 @@ font-family:  Campuni Bl;
 line-height: 2;
  }
 
+
  .item-group{
   display: flex;
   flex-direction: row;
@@ -194,7 +195,6 @@ line-height: 2;
   align-items: center;
   text-align: center;
   z-index: 2;
-
   height: 500px;
  }
 
@@ -206,8 +206,9 @@ background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 z-index: 0;
-
-height: 500px;
+height: 500px; 
+justify-content: center;
+align-items: center;
 } 
 
 
@@ -291,7 +292,7 @@ height: 500px;
     
     
     .banner-terciary h2{
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
 
     .headerH1{
@@ -307,12 +308,10 @@ height: 500px;
 
 
 .products-cont-gral{
-  width: 100%;
+width: 100%;
   background-color: #edece2;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .text-product-h{
@@ -350,12 +349,7 @@ height: 500px;
   width: 60%;
 
 }
-.products-cont-gral7{
-width: 100%;
-height: 500px;
 
-
-}
 .CARD_CON{
   position: relative;
 display: flex;
@@ -388,53 +382,16 @@ height: 280px;
   color: #393b3b;
 }
 
-.cdetail{
-  position: relative;
-  z-index: 2;
-  background-color: #e0dec7;
-  border-radius: 90px 110px 90px 120px;
-  width: 300px;
-  height: 300px;
-  opacity: 0;
-
-}
-.cdetail_{
-  position: relative;
-  z-index: 2;
-  background-color: #e0dec7;
-  border-radius: 90px 110px 80px 120px;
-  width: 300px;
-  height: 300px;
-  opacity: 0;
-}
-
-
-
-.cdetail ul{
-  list-style: none;
-  font-size: 1.3em;
-  font-family:  Bahnschrift Regular;
-  margin: 20px auto;
-
-  }
-  .cdetail_ ul{
-    list-style: none;
-    font-size: 1em;
-    font-family:  Bahnschrift Regular;
-    margin: auto;
-    }
 .flip-gral{
   width: 90%;
   margin: auto;
   height: 500px;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
     .flip-cont{
       width: 30%;
       margin: auto;
-
       width: 380px;
     }
     .CARD8{
@@ -455,23 +412,32 @@ font-family:  Bahnschrift Regular;
 font-size: 0.9em;
 list-style: none;
 text-align: center;
+
+    }
+    .CARD8 ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
     }
     .CARD8UL li{
       color: #393b3b;
 font-family:  Bahnschrift Regular;
 font-size: 1.2em!important;
 list-style: none;
-text-align: center;
     }
 
 
 @media (min-width: 481px) and ( max-width: 850px) {
 
     .flip-gral{
-      width: 100%;
+      width: 95%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+height: 350px;
     }
+
         .flip-cont{
           margin:auto ;
           width: 250px;
@@ -483,6 +449,7 @@ text-align: center;
     margin: auto;
     
     }
+
     .CARD7{
       height: 180px;
     width: 180px;
@@ -511,9 +478,7 @@ text-align: center;
   width: 70%;
   font-weight: 600;
 }
-/* .CARD_IMG{
-  width: 100%;
-} */
+
 .CARD_T{
   padding-top: 3px;
   font-size: 1.6em;
@@ -554,11 +519,11 @@ flex-direction: column;
 
     
     }
+
     .CARD7{
       height: 240px;
     width: 240px;
       transition: all 1.5s ease;
-
     }
     
     .CARD_FLECHA{
@@ -581,15 +546,15 @@ font-size: 0.7em;
       width: 100%;
       flex-direction: column;
       justify-content: center;
-      padding: 0;
 
-
+;
     }
         .flip-cont{
-          width: 250px!important;
-          margin-left: 80px;
+          width: 70%!important;
+          height: 100%;
+margin-left: 50px;
         }
-    
+
 
 
 

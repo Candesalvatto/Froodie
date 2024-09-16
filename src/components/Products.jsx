@@ -9,9 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
-
 export const Products = () => {
 
   const [flippedCards, setFlippedCards] = useState([false, false, false, false]);
@@ -27,14 +24,16 @@ export const Products = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    adaptiveHeight: false,
+    variableWidth: false,
     slidesToShow: 4,
-    slidesToScroll: 0,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         }
       },
@@ -62,7 +61,7 @@ export const Products = () => {
           <h2>Disfruta de la magia de comer rico y sano sin cocinar en tu casa</h2>
         </div>    
             <div className='flip-gral'>
-<Slider {...settings}>
+            <Slider {...settings}>
             <div className='flip-cont'>
             <ReactCardFlip flipDirection='horizontal' isFlipped={flippedCards[0]}>
                                               <div className="CARD7" onClick={() => flipCard(0)}>
@@ -141,7 +140,6 @@ export const Products = () => {
             </div>
             </Slider>
             </div>
-
     </div>
 
     

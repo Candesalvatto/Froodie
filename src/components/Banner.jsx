@@ -1,6 +1,7 @@
 import { XyzTransitionGroup } from '@animxyz/react'
 
 
+
 export const Banner = () => {
 
   const letters = ['f', 'r', 'o', 'o', 'd', 'i', 'e'];
