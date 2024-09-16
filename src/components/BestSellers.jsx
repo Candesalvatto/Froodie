@@ -71,7 +71,7 @@ console.log(products)
   return (
     <div className="bests-sellers-cont-gral" id="productos">
         <div className="best__h">
-        <h2>¿CUÁL ES TU FROODIE PREFERIDO?</h2>
+        <h2>¿Cuál es tu froodie preferido?</h2>
             <h1>DESLIZÁ PARA CONOCER TODOS NUESTROS PRODUCTOS</h1>
         </div>
 

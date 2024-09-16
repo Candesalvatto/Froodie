@@ -15,12 +15,8 @@ export const FormContact = () => {
     e.preventDefault();
 
      const formData = new FormData(formRef.current);
-    // const fromName = formData.get('from_name');
-    // const fromLastName = formData.get('from_lastname');
     const emailId = formData.get('email_id');
-    // const phoneId = formData.get('phone_id');
-    // const companyId = formData.get('company_id');
-    // const message = formData.get('message');
+
 
     if ( !emailId ) {
       setShowError(true);
@@ -37,8 +33,13 @@ export const FormContact = () => {
     const serviceID = 'service_kg836ro';
     const templateID = 'template_y85a84t';
     const userID = 'y7pgvYD58gGTFMvzM';
+    const serviceIDUser = 'service_c2dhpxh';
+    const templateIDUser = 'template_oaduedl';
 
     emailjs.sendForm(serviceID, templateID, formRef.current, userID)
+    .then(() => {
+      return emailjs.sendForm(serviceIDUser, templateIDUser, formRef.current, userID);
+    })
 
       .then(() => {
         setIsSending(false);
@@ -54,7 +55,8 @@ export const FormContact = () => {
         setIsSending(false);
         alert(JSON.stringify(err));
       });
-  };
+
+}
 
   return (
     <div className='cont-form-gral'>
@@ -119,6 +121,15 @@ export const FormContact = () => {
           <form ref={formRef} onSubmit={sendEmail} id="form">
                     <Row className="row_form">
                       <Col  className="px-2">
+                      <input type="email" name="email_id" id="email_id" placeholder="Correo electrónico" />
+                      </Col>
+
+                      <Col size={12} className="px-2">
+                        <button type="submit" disabled={isSending}>
+                          {isSending ? 'Enviando...' : 'Enviar'} 
+                        </button>
+                      </Col>
+                      </Row>
                       {showSuccess && (
                 <Alert variant="success">
                   ¡Gracias por suscribirte!
@@ -129,14 +140,6 @@ export const FormContact = () => {
                   Por favor, completa con tu mail para poder suscribirte
                 </Alert>
               )}
-                      <input type="email" name="email_id" id="email_id" placeholder="Correo electrónico" />
-                      </Col>
-                      <Col size={12} className="px-2">
-                        <button type="submit" disabled={isSending}>
-                          {isSending ? 'Enviando...' : 'Enviar'} 
-                        </button>
-                      </Col>
-                      </Row>
                       </form>
           </Col>
           </Container>

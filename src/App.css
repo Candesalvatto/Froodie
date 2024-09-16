@@ -493,9 +493,10 @@ height: 350px;
 @media (max-width: 480px) {
   .text-product-h{
     width: 85%;
-    margin:auto;
     padding-top: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+
   }
   
   .text-product-h h1{
@@ -906,6 +907,7 @@ outline: none;
 
 .row_form{
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .letter form textarea{
@@ -1318,6 +1320,7 @@ margin-left: 5px;}
   
 .best__h{
   width: 97%;
+  margin-left: 15px;
 }
 
 .best__h h1{
