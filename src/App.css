@@ -184,6 +184,13 @@ color: white;
 font-size: 25vw;
 font-family:  Campuni Bl;
 line-height: 2;
+
+ }
+
+ .letter-f{
+  width: 15vw;
+  margin-bottom: 70px;
+
  }
 
 
@@ -256,6 +263,9 @@ align-items: center;
     .banner-terciary h2{
       font-size: 1.5em;
     }
+    .letter-f{
+      margin-bottom: 50px;
+     }
 
 }
 @media (max-width: 480px) {
@@ -267,6 +277,9 @@ align-items: center;
     align-items: center;
 
     }
+    .letter-f{
+      margin-bottom: 25px;
+     }
     .banner-secundary{width: 100%;
       height: 200px;
       display: flex;

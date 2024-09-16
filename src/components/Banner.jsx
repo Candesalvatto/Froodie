@@ -1,4 +1,5 @@
 import { XyzTransitionGroup } from '@animxyz/react'
+import f from '../../public/src/assets/img/f.png'
 
 
 
@@ -30,11 +31,20 @@ export const Banner = () => {
                     className="item-group"
                     xyz="fade down-100% back-5 duration-5 ease-ease stagger-2.5 iterate-1 origin-bottom perspective delay-8"
                     >
-                    {letters.map((letter, index) => (
-                      <h1 className="headerH1" key={index}>
-                        {letter}
-                      </h1>
-                    ))}
+      {letters.map((letter, index) => (
+        letter === 'f' ? (
+          <img
+            key={index}
+            src={f}
+            alt="Letter F"
+            className='letter-f'
+          />
+        ) : (
+          <h1 className="headerH1" key={index}>
+            {letter}
+          </h1>
+        )
+      ))}
             </XyzTransitionGroup>
             </div>
         </div>
