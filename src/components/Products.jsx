@@ -1,8 +1,8 @@
-import Choco from '../../public/src/assets/img/postre2.png'
-import Carne from '../../public/src/assets/img/albond.png'
-import Wrap from '../../public/src/assets/img/wrap1.png'
-import Tarta from '../../public/src/assets/img/tarta2.png'
-import Flecha from '../../public/src/assets/img/flecha.png'
+import Choco from '../../public/src/assets/img/postre2.webp'
+import Carne from '../../public/src/assets/img/albond.webp'
+import Wrap from '../../public/src/assets/img/wrap1.webp'
+import Tarta from '../../public/src/assets/img/tarta2.webp'
+import Flecha from '../../public/src/assets/img/flecha.webp'
 import ReactCardFlip from 'react-card-flip';
 import { useState } from 'react'
 import Slider from "react-slick";
@@ -87,7 +87,7 @@ export const Products = () => {
             <div className='flip-cont'>
             <ReactCardFlip flipDirection='horizontal' isFlipped={flippedCards[1]}>
                                               <div className="CARD7" onClick={() => flipCard(1)}>
-                                                <img src={Wrap} alt="Plato Listo" className='CARD_IMG'/>
+                                                <img src={Wrap} alt="Wrap" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(1)}>
                                               <ul className='CARD8UL'>
@@ -106,7 +106,7 @@ export const Products = () => {
             <div className='flip-cont'>
             <ReactCardFlip flipDirection='horizontal' isFlipped={flippedCards[2]}>
                                               <div className="CARD7" onClick={() => flipCard(2)}>
-                                                <img src={Tarta} alt="Plato Listo" className='CARD_IMG'/>
+                                                <img src={Tarta} alt="Tartas" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(2)}>
                                               <ul className='CARD8UL'>
@@ -124,7 +124,7 @@ export const Products = () => {
             <div className='flip-cont'>
             <ReactCardFlip flipDirection='horizontal' isFlipped={flippedCards[3]}>
                                               <div className="CARD7" onClick={() => flipCard(3)}>
-                                                <img src={Choco} alt="Plato Listo" className='CARD_IMG'/>
+                                                <img src={Choco} alt="Postres" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(3)}>
                                               <ul className='CARD8UL'>

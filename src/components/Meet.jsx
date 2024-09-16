@@ -1,6 +1,6 @@
-import ico_sarten from '../../public/src/assets/img/sarten.png'
-import ico_micro from '../../public/src/assets/img/microonda.png'
-import ico_horno from '../../public/src/assets/img/horno.png'
+import ico_sarten from '../../public/src/assets/img/sarten.webp'
+import ico_micro from '../../public/src/assets/img/microonda.webp'
+import ico_horno from '../../public/src/assets/img/horno.webp'
 
 
 export const Meet = () => {

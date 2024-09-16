@@ -1,4 +1,4 @@
-import Logo from '../../public/src/assets/img/logo-froodie-blanco-sin-fondo.png'
+import Logo from '../../public/src/assets/img/logo-froodie-blanco-sin-fondo.webp'
 import ico_insta from '../../public/src/assets/img/instagram.png'
 import linea from '../../public/src/assets/img/linea.png'
 import Row from 'react-bootstrap/Row';

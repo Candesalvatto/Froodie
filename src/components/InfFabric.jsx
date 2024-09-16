@@ -1,5 +1,5 @@
 import Slinte from '../../public/src/assets/img/slinte-yellow.png'
-import Fabric from '../../public/src/assets/img/HRTSY84.jpg'
+import Fabric from '../../public/src/assets/img/HRTSY84.webp'
 
 export const InfFabric = () => {
   return (

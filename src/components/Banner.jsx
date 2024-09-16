@@ -1,5 +1,5 @@
 import { XyzTransitionGroup } from '@animxyz/react'
-import f from '../../public/src/assets/img/f.png'
+import f from '../../public/src/assets/img/f.webp'
 
 
 
