@@ -10,7 +10,7 @@ export const Meet = () => {
           <div className='cook_inst'>
             <div className='h_co'>
               <h1>Cómo calentar tu Froodie</h1>
-              <h2>Quitar del freezer, puedes dejarlo descongelar o usar elementos de tu cocina. El envase es apto para microondas, no te preocupes!</h2>
+              <h2>Quitar del freezer, podés dejarlo descongelar o usar elementos de tu cocina. El envase es apto para microondas, no te preocupes!</h2>
             </div>
 
             <div className='dv_co'>

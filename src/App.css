@@ -185,6 +185,7 @@ font-size: 25vw;
 font-family:  Campuni Bl;
 line-height: 2;
 
+
  }
 
  .letter-f{
@@ -386,10 +387,10 @@ align-items:center ;
   transition-duration: 0.1s;
   margin: auto;
   background-color: #DFDCC1; 
-  border-radius: 45% 31% 30% 29% / 38% 40% 39% 29% ; 
+  border-radius: 45% 31% 30% 29% / 18% 40% 39% 29% ; 
 }
 .CARD7:hover{
-  background-color: #00a94fa5; 
+  background-color: #00a94ff4; 
   transform: scale(1.1) rotate(-5deg);
   transition: transform 0.15s ease-in-out
 }

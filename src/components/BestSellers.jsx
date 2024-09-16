@@ -71,7 +71,7 @@ console.log(products)
   return (
     <div className="bests-sellers-cont-gral" id="productos">
         <div className="best__h">
-        <h2>¿Cuál es tu froodie preferido?</h2>
+        <h2>¿Cuál es tu preferido?</h2>
             <h1>DESLIZÁ PARA CONOCER TODOS NUESTROS PRODUCTOS</h1>
         </div>
 
@@ -79,7 +79,7 @@ console.log(products)
         <Slider {...settings}>
         {products.map(product => (
                 <Card className='card_best_seller' key={product.id}>
-            <Card.Img variant="top" src={product.img} className='img_best' />
+            <Card.Img variant="top" src={product.img} className='img_best' loading="lazy" />
             <Card.Body>
                 <Card.Title className='title_b_s'>{product.nombre}</Card.Title>
                     <div className='cook_cont_'>

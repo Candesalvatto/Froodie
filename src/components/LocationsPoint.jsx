@@ -9,7 +9,7 @@ import fluck from '../../public/src/assets/img/fluck.webp'
 export const LocationsPoint = () => {
   return (
     <div className="cont_gral_loc_points">
-            <h1>Encuentra tu Froodie favorito en los distribuidores</h1>
+            <h1>Encontrá tu Froodie favorito en los distribuidores</h1>
             <div className='buttons_points'>
                 <a href="https://www.instagram.com/fluckdistribuciones/?hl=es"><img src={fluck} alt='Fluck'/></a>
                 <a href="https://www.abordoalimentos.com/producto/platos-listos-froodie-caja-mixta-x-6-uni/"><img src={abordo} alt='A ordo alimentos'/></a>

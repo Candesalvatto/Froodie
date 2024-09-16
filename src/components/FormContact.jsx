@@ -116,7 +116,7 @@ export const FormContact = () => {
         <Col className="align-items-center letter-cont-col">
           <Col className='letter-1'>
             <h1>Suscribite a nuestro newletter</h1>
-            <h2>Recibe información de Froodie cada semana para estar al día con las novedades</h2>
+            <h2>Recibí información de Froodie cada semana para estar al día con las novedades</h2>
           </Col>
           <form ref={formRef} onSubmit={sendEmail} id="form">
                     <Row className="row_form">

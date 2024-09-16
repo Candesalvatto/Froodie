@@ -57,8 +57,8 @@ export const Products = () => {
   return (
     <div className="products-cont-gral">
             <div className="text-product-h">
-          <h1>Explora nuestros productos</h1>
-          <h2>Disfruta de la magia de comer rico y sano sin cocinar en tu casa</h2>
+          <h1>Explorá nuestros productos</h1>
+          <h2>Disfrutá de la magia de comer rico y sano sin cocinar en tu casa</h2>
         </div>    
             <div className='flip-gral'>
             <Slider {...settings}>

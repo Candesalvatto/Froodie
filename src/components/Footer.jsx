@@ -14,19 +14,19 @@ export const Footer = () => {
         <a href='/'><img src={Logo} alt="logoFroodie"/></a>
         <a href="#sobre-nosotros">Sobre Nosotros</a>
         <a href="#productos">Nuestros Productos</a>
-        <a href="#contacto">Contáctenos</a>
+        <a href="#contacto">Contáctanos</a>
         </Col>
 
 
         <Col xs={5} className='C-2 d-flex flex-column  '>
-            <h1>¡Síguenos en nuestras redes sociales!</h1>
+            <h1>¡Seguinos en nuestras redes sociales!</h1>
                 <div className='social_co_i2'>
                   <img src={ico_insta} alt='instagram' className='social_co_INST'  />
                   <a href='https://www.instagram.com/froodie.ar/' target='blanck'>@froodie.ar</a>
                 </div>
             <img src={linea} alt=''/>
                   <div className='distr_inf'>
-                  <h2>Si estás interesado en ser distribuidor escríbenos a</h2>
+                  <h2>Si estás interesado en ser distribuidor escribinos a</h2>
                   <p>ventas@coolmeals.com.ar</p>
                   </div>
         </Col>   
