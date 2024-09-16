@@ -1,7 +1,7 @@
-import Choco from '../../public/src/assets/img/testpostre.png'
-import Carne from '../../public/src/assets/img/testcarne.png'
-import Wrap from '../../public/src/assets/img/testwrap.png'
-import Tarta from '../../public/src/assets/img/testtarta.png'
+import Choco from '../../public/src/assets/img/postre2.png'
+import Carne from '../../public/src/assets/img/albond.png'
+import Wrap from '../../public/src/assets/img/wrap1.png'
+import Tarta from '../../public/src/assets/img/tarta2.png'
 import Flecha from '../../public/src/assets/img/flecha.png'
 import ReactCardFlip from 'react-card-flip';
 import { useState } from 'react'
@@ -33,14 +33,14 @@ export const Products = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },

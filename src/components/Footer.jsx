@@ -3,6 +3,7 @@ import ico_insta from '../../public/src/assets/img/instagram.png'
 import linea from '../../public/src/assets/img/linea.png'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
       <div className='cont_footer w-100 '>
       <Row>
         <Col xs={5} className=' C-1 d-flex flex-column  '>
-        <img src={Logo} alt="logoFroodie"/>
+        <a href='/'><img src={Logo} alt="logoFroodie"/></a>
         <a href="#sobre-nosotros">Sobre Nosotros</a>
         <a href="#productos">Nuestros Productos</a>
         <a href="#contacto">Contáctenos</a>
@@ -20,8 +21,8 @@ export const Footer = () => {
         <Col xs={5} className='C-2 d-flex flex-column  '>
             <h1>¡Síguenos en nuestras redes sociales!</h1>
                 <div className='social_co_i2'>
-                  <img src={ico_insta} alt='instagram' className='social_co_INST'/>
-                  <a href='https://www.instagram.com/froodie.ar/'>@froodie.ar</a>
+                  <img src={ico_insta} alt='instagram' className='social_co_INST'  />
+                  <a href='https://www.instagram.com/froodie.ar/' target='blanck'>@froodie.ar</a>
                 </div>
             <img src={linea} alt=''/>
                   <div className='distr_inf'>
@@ -34,8 +35,8 @@ export const Footer = () => {
 
         <Row className='C-3'>
         <div className='pol_con'>
-        <a href="politica-privacidad" >Condiciones de uso</a>
-        <a href="politica-privacidad">Política de privacidad</a>
+        <Link to="/politica-privacidad">Condiciones de uso</Link>
+        <Link to="/politica-privacidad">Politica de privacidad</Link>
         </div>
         <span>©2024 Froodie. Todos los derechos reservados.</span>
         </Row>

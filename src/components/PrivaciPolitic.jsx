@@ -1,3 +1,4 @@
+import { Footer } from './Footer'
 import {NavBar} from './NavBar'
 
 export const PrivaciPolitic = () => {
@@ -31,6 +32,7 @@ export const PrivaciPolitic = () => {
 </h2>
         
         </div>
+        <Footer/>
     </div>
   )
 }
