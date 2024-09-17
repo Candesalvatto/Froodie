@@ -68,7 +68,7 @@ export const Products = () => {
                                                 <img src={Carne} alt="Plato Listo" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(0)}>
-                                              <ul>
+                                              <ul translate="no">
                                               <li>Albóndigas a la portuguesa con arroz</li>
                                               <li>Carré de cerdo con puré de batatas</li>
                                               <li>Pastel de papas</li>
@@ -81,7 +81,7 @@ export const Products = () => {
                                               </div>
             </ReactCardFlip>
             <img src={Flecha} alt='flecha' className='CARD_FLECHA'/>
-            <h1 className='CARD_T'>Platos listos</h1>
+            <h1 className='CARD_T' translate="no">Platos listos</h1>
             </div>
 
             <div className='flip-cont'>
@@ -90,7 +90,7 @@ export const Products = () => {
                                                 <img src={Wrap} alt="Wrap" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(1)}>
-                                              <ul className='CARD8UL'>
+                                              <ul className='CARD8UL' translate="no">
                                               <li>Vegetales</li>
                                               <li>Vegetales grillados</li>
                                               <li>Carne desmechada y chedar</li>
@@ -100,7 +100,7 @@ export const Products = () => {
                                               </div>
             </ReactCardFlip>
             <img src={Flecha} alt='flecha' className='CARD_FLECHA'/>
-            <h1 className='CARD_T'>Wraps</h1>
+            <h1 className='CARD_T' translate="no" >Wraps</h1>
             </div>
 
             <div className='flip-cont'>
@@ -109,7 +109,7 @@ export const Products = () => {
                                                 <img src={Tarta} alt="Tartas" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(2)}>
-                                              <ul className='CARD8UL'>
+                                              <ul className='CARD8UL' translate="no">
                                               <li>Vegetales</li>
                                               <li>Bicolor</li>
                                               <li>Jamón y queso</li>
@@ -118,7 +118,7 @@ export const Products = () => {
                                               </div>
             </ReactCardFlip>
             <img src={Flecha} alt='flecha' className='CARD_FLECHA'/>
-            <h1 className='CARD_T'>Tartas</h1>
+            <h1 className='CARD_T' translate="no">Tartas</h1>
             </div>
 
             <div className='flip-cont'>
@@ -127,7 +127,7 @@ export const Products = () => {
                                                 <img src={Choco} alt="Postres" className='CARD_IMG'/>
                                               </div>
                                               <div className="CARD8" onClick={() => flipCard(3)}>
-                                              <ul className='CARD8UL'>
+                                              <ul className='CARD8UL' translate="no">
                                               <li>Chocotorta</li>
                                               <li>Postre oreo</li>
                                               <li>Tiramisú</li>
@@ -136,7 +136,7 @@ export const Products = () => {
                                               </div>
             </ReactCardFlip>
             <img src={Flecha} alt='flecha' className='CARD_FLECHA'/>
-            <h1 className='CARD_T'>Postres</h1>
+            <h1 className='CARD_T' translate="no">Postres</h1>
             </div>
             </Slider>
             </div>

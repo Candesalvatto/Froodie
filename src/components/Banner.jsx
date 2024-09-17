@@ -40,7 +40,7 @@ export const Banner = () => {
             className='letter-f'
           />
         ) : (
-          <h1 className="headerH1" key={index}>
+          <h1 className="headerH1" key={index} translate="no">
             {letter}
           </h1>
         )
@@ -52,7 +52,7 @@ export const Banner = () => {
         <XyzTransitionGroup
                             appear
                        xyz="fade-100%  down-1 origin-bottom ease-out-back duration-10  iterate-1  delay-30">
-              <h2>FROZZEN IDEAS READY TO EAT</h2>
+              <h2 translate="no">FROZZEN IDEAS READY TO EAT</h2>
               </XyzTransitionGroup>
         </div>
     </div>
